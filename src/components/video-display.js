@@ -14,12 +14,12 @@ const VideoDisplay = ({ roomID }) => {
     if (!room) {
       startVideo();
     }
+    // TODO: fix window error on netlify
+    // window.addEventListener('beforeunload', leaveRoom);
 
-    window.addEventListener('beforeunload', leaveRoom);
-
-    return () => {
-      window.removeEventListener('beforeunload', leaveRoom);
-    };
+    // return () => {
+    //   window.removeEventListener('beforeunload', leaveRoom);
+    // };
   }, [token, roomID, room, startVideo]);
 
   return (

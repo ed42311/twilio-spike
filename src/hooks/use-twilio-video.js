@@ -3,7 +3,7 @@ import axios from 'axios';
 import { connect, createLocalVideoTrack } from 'twilio-video';
 
 const TWILIO_TOKEN_URL =
-  'https://jasmine-greyhound-8600.twil.io/get-room-token';
+  'https://ebony-bonobo-6230.twil.io/create-room-token';
 
 const DEFAULT_STATE = {
   identity: false,
